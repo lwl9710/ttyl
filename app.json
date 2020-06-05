@@ -6,12 +6,12 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "天天一论",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#999",
-    "selectedColor": "#449187",
+    "color": "#515151",
+    "selectedColor": "#F24302",
     "borderStyle": "white",
     "list": [
       {

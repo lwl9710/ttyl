@@ -1,5 +1,5 @@
 {
-	"description": "项目配置文件",
+	"description": "天天一论-配置文件",
 	"packOptions": {
 		"ignore": []
 	},
@@ -10,8 +10,8 @@
 		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
-		"coverView": true,
 		"autoAudits": false,
+		"coverView": true,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
 		"checkInvalidKey": true,
@@ -22,13 +22,13 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"useCompilerModule": true,
+		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.1",
 	"appid": "wx44d69c419cd60e37",
-	"projectname": "basic-project",
+	"projectname": "%E5%A4%A9%E5%A4%A9%E4%B8%80%E8%AE%BA",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
