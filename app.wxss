@@ -1,0 +1,7 @@
+page {
+  background-color: #F4F4F4;
+}
+
+view {
+  line-height: 1.25em;
+}
