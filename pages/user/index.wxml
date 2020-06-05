@@ -1,1 +1,13 @@
-<text>我的</text>
+<view class="user_detail">
+  <view class="user_avatar">
+    <image mode="aspectFill" src="{{ userInfo.avatarUrl || '/images/user/user_default_avatar.jpg' }}" />
+  </view>
+  <view class="user_desc">
+    <block wx:if="{{ userInfo }}">
+      <view class="user_nickname text_simple_ellipses">{{ userInfo.nickName }}</view>
+      <view class="user_more text_more_ellipses_l2">{{ userInfo.gender ? "男" : "女" }}</view>
+    </block>
+    <text wx:else>您还未登陆,点击可以登陆哦~~~</text>
+  </view>
+  <button wx:if="{{ !userInfo }}" type="primary" open-type="getUserInfo" bind:getuserinfo="clickGetUserInfo" lang="zh_CN">登陆</button>
+</view>

@@ -91,10 +91,10 @@ export default (function(){
 				success(res){
 					for(let i = 0;i < interceptor.response.length;i++){
 						try{
-							res = interceptor.response[i].fn(res);
+							res = interceptor.response[i].fn(res,options.meta || {});
 						}catch(err){
 							typeof interceptor.response[i].errFn === "function" && interceptor.response[i].errFn(err);
-							return reject();
+							return reject(err);
 						}
 					}
 					resolve(res);

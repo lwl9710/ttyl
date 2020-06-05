@@ -1,5 +1,15 @@
+import { getAuthorizeInfo } from "./utils/auth";
+
 App({
+  globalData: {
+    userInfo: null
+  },
   onLaunch() {
-    console.log("小程序启动完成");
+    //获取用户信息
+    getAuthorizeInfo(["userInfo","address"]).then(({ userInfo })=>{
+      if(userInfo.errMsg.indexOf("ok") != -1) {
+        this.globalData.userInfo = userInfo.userInfo;
+      }
+    })
   }
 })

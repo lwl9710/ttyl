@@ -1,0 +1,44 @@
+.user_detail {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+  background-color: #ccc;
+}
+
+.user_detail > button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.user_detail .user_avatar {
+  margin-right: 15rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.user_detail .user_avatar image {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  border-radius: 50%;
+}
+
+.user_detail .user_desc {
+  flex: 1;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.user_detail .user_desc text {
+  font-weight: bold;
+}
+
+.user_detail .user_nickname {
+  font-weight: bold;
+}
+
