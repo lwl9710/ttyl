@@ -1,6 +1,6 @@
 <view 
   class="article_card_wrapper{{ pressState ? ' box_big' : '' }}" 
-  bind:touchstart="handleTouchStart"
+  bind:longpress="handleTouchStart"
   bind:touchend="handleTouchEnd"
   bind:touchcancel="handleTouchEnd"
 >

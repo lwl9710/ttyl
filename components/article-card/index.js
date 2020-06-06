@@ -5,13 +5,11 @@ Component({
   },  
   methods: {
     handleTouchStart() {
-      this.triggerEvent("touchchange", true);
       this.setData({
         pressState: true
       })
     },
     handleTouchEnd() {
-      this.triggerEvent("touchchange", false);
       this.setData({
         pressState: false
       })

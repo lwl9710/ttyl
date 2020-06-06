@@ -24,7 +24,7 @@
   <title text="推荐列表" />
   <view class="article_list">
     <view class="article_item">
-      <article-card bind:touchchange="handleTouchChange"/>
+      <article-card />
     </view>
     <view class="article_item">
       <article-card />
@@ -49,5 +49,3 @@
     </view>
   </view>
 </basic-container>
-
-<view wx:if="{{ cancelPageScrollState }}" class="mask_cancel_scroll max_space" catchtouchmove="cancelPageScroll"></view>

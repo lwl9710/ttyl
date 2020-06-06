@@ -1,8 +1,5 @@
-import { test } from "../../common/api/home";
-
 Component({
   data: {
-    cancelPageScrollState: false,
     bannerList: [
       "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1796045782,3544221305&fm=15&gp=0.jpg",
       "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2308058821,195757033&fm=26&gp=0.jpg",
@@ -30,20 +27,6 @@ Component({
   lifetimes: {
     attached() {
       
-    }
-  },
-  methods: {
-    handleLongTap(event) {
-      console.log("长按", event);
-    },
-    cancelPageScroll(){
-      console.log("尝试滚动页面");
-      return false
-    },
-    handleTouchChange(event) {
-      this.setData({
-        cancelPageScrollState: event.detail
-      })
     }
   }
 });
