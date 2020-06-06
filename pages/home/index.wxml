@@ -1,1 +1,53 @@
-<view>首页</view>
+<basic-container>
+  <swiper
+    class="banner"
+    circular
+    autoplay
+    indicator-dots
+  >
+    <swiper-item wx:for="{{ bannerList }}" wx:for-item="src" wx:key="index">
+      <image mode="aspectFill" src="{{ src }}"></image>
+    </swiper-item>
+  </swiper>
+</basic-container>
+
+<basic-container>
+  <view class="category_wrapper">
+    <view class="item" wx:for="{{ categoryList }}" wx:key="index">
+      <image mode="aspectFit" src="{{ item.src }}" />
+      <text>{{ item.title }}</text>
+    </view>
+  </view>
+</basic-container>
+
+<basic-container>
+  <title text="推荐列表" />
+  <view class="article_list">
+    <view class="article_item">
+      <article-card bind:touchchange="handleTouchChange"/>
+    </view>
+    <view class="article_item">
+      <article-card />
+    </view>
+    <view class="article_item">
+      <article-card />
+    </view>
+  </view>
+</basic-container>
+
+<basic-container>
+  <title text="文章列表" />
+  <view class="article_list">
+    <view class="article_item">
+      <article-card />
+    </view>
+    <view class="article_item">
+      <article-card />
+    </view>
+    <view class="article_item">
+      <article-card />
+    </view>
+  </view>
+</basic-container>
+
+<view wx:if="{{ cancelPageScrollState }}" class="mask_cancel_scroll max_space" catchtouchmove="cancelPageScroll"></view>

@@ -1,1 +1,55 @@
-/* pages/home/index.wxss */
+page {
+  width: 100%;
+  height: 100%;
+}
+.banner {
+  overflow: hidden;
+  height: 366rpx;
+  border-radius: 10rpx;
+}
+.banner image {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.category_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category_wrapper .item {
+  width: 120rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.category_wrapper .item image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  vertical-align: top;
+}
+
+.article_list {
+  margin-top: 30rpx;
+  padding: 10rpx;
+  background-color: #F4F4F4;
+  border-radius: 10rpx;
+}
+.article_list .article_item:not(:first-child) {
+  margin-top: 30rpx;
+}
+
+.article_list .article_item {
+  height: 200rpx;
+}
+
+.mask_cancel_scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .1);
+}

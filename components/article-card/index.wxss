@@ -1,0 +1,15 @@
+/* components/article-card/index.wxss */
+.article_card_wrapper {
+  padding: 10rpx;
+  width: calc(100% - 20rpx);
+  height: calc(100% - 20rpx);
+  background-color: white;
+  border-radius: 10rpx;
+  box-shadow: 0 0 5rpx #ddd;
+  transition: transform .3s linear;
+}
+
+.box_big {
+  box-shadow: 0 0 10rpx #ddd;
+  transform: scale(1.05);
+}

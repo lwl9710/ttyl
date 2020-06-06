@@ -1,0 +1,3 @@
+<view class="basic_container" bind:tap="handleTap">
+  <slot></slot>
+</view>

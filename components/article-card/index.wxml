@@ -1,0 +1,8 @@
+<view 
+  class="article_card_wrapper{{ pressState ? ' box_big' : '' }}" 
+  bind:touchstart="handleTouchStart"
+  bind:touchend="handleTouchEnd"
+  bind:touchcancel="handleTouchEnd"
+>
+文章卡片
+</view>

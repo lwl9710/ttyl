@@ -28,6 +28,9 @@
       }
     ]
   },
- 
+  "usingComponents": {
+    "basic-container": "components/basic-container/index",
+    "article-card": "components/article-card/index"
+  },
   "sitemapLocation": "sitemap.json"
 }

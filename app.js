@@ -6,7 +6,7 @@ App({
   },
   onLaunch() {
     //获取用户信息
-    getAuthorizeInfo(["userInfo","address"]).then(({ userInfo })=>{
+    getAuthorizeInfo(["userInfo"]).then(({ userInfo })=>{
       if(userInfo.errMsg.indexOf("ok") != -1) {
         this.globalData.userInfo = userInfo.userInfo;
       }

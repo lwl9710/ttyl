@@ -1,0 +1,4 @@
+<!--pages/home/components/Title/index.wxml-->
+<view class="title_wrapper">
+  <view class="title_main">{{ text }}</view>
+</view>

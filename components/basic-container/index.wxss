@@ -1,0 +1,7 @@
+.basic_container {
+  margin: 10rpx auto 0;
+  padding: 10rpx;
+  width: 690rpx;
+  background-color: white;
+  border-radius: 10rpx;
+}

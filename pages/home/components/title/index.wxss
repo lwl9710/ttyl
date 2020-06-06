@@ -1,0 +1,28 @@
+/* pages/home/components/Title/index.wxss */
+.title_wrapper {
+  text-align: center;
+}
+.title_main {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+}
+
+.title_main::before, .title_main::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  content: "";
+  margin: auto;
+  width: 100rpx;
+  height: 0;
+  border-top: 1px dashed #999;
+}
+
+.title_main::before {
+  left: -120rpx;
+}
+
+.title_main::after {
+  right: -120rpx;
+}

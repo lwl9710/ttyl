@@ -17,8 +17,9 @@ http.interceptor.request.use(configs=>{
 },()=>wx.hideLoading())
 
 //添加响应拦截器
-http.interceptor.response.use(response=>{
+http.interceptor.response.use((response, meta)=>{
 	wx.hideLoading();
+	if(meta.isHeader)return response;
 	return response.data;
 },()=>wx.hideLoading())
 
