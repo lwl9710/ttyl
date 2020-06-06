@@ -1,4 +1,5 @@
 page {
+  padding-bottom: 50rpx;
   background-color: #F4F4F4;
 }
 
